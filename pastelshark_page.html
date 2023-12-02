@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Página de mensagens Pastel Shark</title>
+	<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/3b7c1eabb4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<button id="logout" onclick="logout();" class="saida">
+			<i class="fa-solid fa-right-from-bracket"></i> 
+			Logout
+		</button>
+		<center>
+			<h1 class="header">
+				Pastel Shark
+				<sup>
+					<img src="pastelshark.png" width="50px">
+				</sup>
+			</h1>
+			<div id="output" style="text-align: left;margin-bottom: 70px;"> </div>
+		</center>
+	</header>
+
+	<main>
+		<center>
+			<div class="input_div_message_page">
+				<label>Enviar:</label>
+				<input type="text" id="msg" class="form-control" placeholder="Mensagem">
+				<button onclick="send()" class="btn btn-success">Enviar</button>
+			</div>
+		</center>
+	</main>
+
+	<footer>
+
+	</footer>
+
+	<script src="pastelshark_page.js"></script>
+</body>
+
+</html>
